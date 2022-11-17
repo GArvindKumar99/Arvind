@@ -15,7 +15,8 @@ public class MyHashMap {
    System.out.println( ca.put("abc",1));
    System.out.println( ca.put("abc",2));
    System.out.println( ca.put("abc",3));
-   System.out.println( ca.put("abc",4));
+   System.out.println( ca.put(""
+   		+ "abc",4));
    System.out.println(ca.keySet());
     ca.put("xyz",2);
     ca.put("def",3);
