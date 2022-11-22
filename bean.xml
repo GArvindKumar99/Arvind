@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- <bean class="com.te.mavendemo.pojo.Student" id="s">
+		<property name="studentId" value="100" />
+		<property name="studentName" value="Jai" />
+		<property name="address" ref="l" />
+		<property name="address1" ref="f" />
+    </bean> 
+ -->
+	<bean class="com.te.mavendemo.pojo.Student" id="s">
+		<constructor-arg name="studentId" value="200" />
+		<property name="studentName" value="pai" />
+			<property name="address" ref="l" />
+		
+		
+</bean>
+	
+	<bean class="com.te.mavendemo.pojo.Address" id="f">
+		<property name="hno" value="10g" />
+		<property name="state" value="karnataka" />
+
+
+
+	</bean>
+
+	<bean class="com.te.mavendemo.pojo.Address" id="l">
+		<property name="hno" value="11g" />
+		<property name="state" value="TN" />
+
+
+
+	</bean>
+
+</beans>
